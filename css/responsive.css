@@ -1,22 +1,28 @@
-.scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-    text-align: center;
-    line-height: 40px;
-    cursor: pointer;
-  }
-  
-  .scroll-to-top:hover {
-    background-color: #0056b3;
-  }
-  
-  
+/* Custom CSS for scrolling text */
+.scrolling-container {
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex; /* Use flex to position image and text together */
+  align-items: center; /* Center alignment for the flex container */
+  width: 100%; /* Set width to 100% */
+}
+
+.scrolling-text {
+  display: inline-block;
+  color: white;
+}
+
+#scrollingImage {
+  height: auto; /* Ensure image height adjusts according to width */
+}
+
+
+/* section-3 div-height and img -height-width */
+.sc-item{
+  height: 600px;
+}
+.sc-img{
+  height: 100%;
+  /* object-fit: cover; */
+}
+

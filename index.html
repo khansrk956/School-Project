@@ -10,7 +10,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-f6I5oBlyIFTHiKEzY8bPV1N2p9WuYw7lkD5Ne6C3O3UzOL+sBNz7YsV73S9L+Cr9xr9RJyrqfwNJ57Smgwpqag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
@@ -21,7 +24,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
-  <body>   
+  <body>
     <!-- Header Section -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -135,8 +138,151 @@
     </header>
 
     <!-- main section -->
-    <main style="height: 3000px; width: 100%">
-      <h2>I am inside main</h2>
+    <main>
+
+      <!-- Image-Slider section-1 -->
+      <section>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+              <img
+                src="image/img1.webp"
+                class="d-block w-100 c-img"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item c-item">
+              <img
+                src="image/img2.webp"
+                class="d-block w-100 c-img"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item c-item">
+              <img
+                src="image/img3.jpeg"
+                class="d-block w-100 c-img"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- Image-Slider section-end -->
+
+      <!-- moving text-image section-start -->
+      <section style="background-color: #6351ce">
+        <div class="container">
+          <div class="row">
+            <div class="col" id="col-item">
+              <!-- Scrolling container -->
+              <div class="scrolling-container">
+                <!-- Image -->
+                <img
+                  src="logo/img-new.gif"
+                  alt="Placeholder Image"
+                  class="mr-3"
+                  id="scrollingImage"
+                />
+                <!-- Scrolling text container -->
+                <div class="scrolling-text" id="scrollingTextContainer">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  non mauris vitae erat consequat auctor eu in elit. Class
+                  aptent taciti sociosqu ad litora torquent per conubia nostra.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- moving text-image section-start -->
+
+      <!-- section slider-image-3 -->
+      <section>
+        <div class="container py-5 text-center">
+          <div class="row">
+            <div class="col-12"><h2>Achievement</h2></div>
+            <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 120px; background-color: black; height: 3px;"
+          />
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active sc-item">
+                <img src="image-1/science.webp" class="d-block w-100 sc-img" alt="..." class="img-fluid" >
+              </div>
+              <div class="carousel-item sc-item">
+                <img src="image-1/football.jpeg" class="d-block w-100 sc-img" alt="..." class="img-fluid">
+              </div>
+              <div class="carousel-item sc-item">
+                <img src="image-1/img3.jpeg" class="d-block w-100 sc-img" alt="..." class="img-fluid">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </section>
+      
+    
+    
+      <!-- image slider-end -->
+
+      <!-- End section-3 -->
     </main>
 
     <!-- Footer -->
@@ -188,15 +334,22 @@
             <!-- Grid column -->
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <!-- Content -->
-              <h6 class="text-uppercase fw-bold"><img class="img-fluid mb-4" src="logo/logo2.png" alt=""></h6>
+              <h6 class="text-uppercase fw-bold">
+                <img class="img-fluid mb-4" src="logo/logo2.png" alt="" />
+              </h6>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptate perferendis aliquam asperiores sequi ipsa facilis commodi ratione laborum iure.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci voluptate perferendis aliquam asperiores sequi ipsa
+                facilis commodi ratione laborum iure.
               </p>
             </div>
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" id="sub-heading">
+            <div
+              class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"
+              id="sub-heading"
+            >
               <!-- Links -->
               <h6 class="text-uppercase fw-bold">Featured Links</h6>
               <hr
@@ -226,37 +379,46 @@
                 class="mb-4 mt-0 d-inline-block mx-auto"
                 style="width: 60px; background-color: #edc535; height: 2px"
               />
-              <p><i class="fas fa-home mr-3"></i> Sector-22, Faridabad 121005, Haryana</p>
+              <p>
+                <i class="fas fa-home mr-3"></i> Sector-22, Faridabad 121005,
+                Haryana
+              </p>
               <p><i class="fas fa-envelope mr-3"></i> hiba@school.com</p>
               <p><i class="fas fa-phone mr-3"></i> + 91 880 272 7273</p>
               <p><i class="fas fa-print mr-3"></i> + 91 870 042 2278</p>
             </div>
             <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 ">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold">Location</h6>
-                <hr
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Location</h6>
+              <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width:60px; background-color: #edc535; height: 2px"
-                />
-                <div class="ratio ratio-1x1">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7021.492828152942!2d77.2897763924227!3d28.36651535324396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdc1ad4a13435%3A0xd653ff79ab4cb457!2sSector%2022%2C%20Faridabad%2C%20Haryana%20121005!5e0!3m2!1sen!2sin!4v1711424563559!5m2!1sen!2sin" width="250px" height="250px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                style="width: 60px; background-color: #edc535; height: 2px"
+              />
+              <div class="ratio ratio-1x1">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7021.492828152942!2d77.2897763924227!3d28.36651535324396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdc1ad4a13435%3A0xd653ff79ab4cb457!2sSector%2022%2C%20Faridabad%2C%20Haryana%20121005!5e0!3m2!1sen!2sin!4v1711424563559!5m2!1sen!2sin"
+                  width="250px"
+                  height="250px"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
-        
           </div>
-          
+
           <!-- Grid row -->
         </div>
-        
       </section>
       <!-- Section: Links  -->
-      
+
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2024 Copyright:
-        <a class="text-white" href="#"
-          style="text-decoration: none;">This is created by Sharukh khan</a
+        <a class="text-white" href="#" style="text-decoration: none"
+          >This is created by Sharukh khan</a
         >
       </div>
       <!-- Copyright -->
@@ -268,5 +430,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>

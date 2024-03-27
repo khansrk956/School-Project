@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: azure;
+        }
+        .gallery{
+            width: 900px;
+            display: flex;
+            overflow-x: scroll;
+            /* background-color: yellow; */
+        }
+        .gallery div{
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 20px;
+            padding: 10px;
+            flex: none;
+            /* background-color: aqua; */
+        }
+        .gallery div img{
+            width: 100%;
+            filter: grayscale(100%);
+            transition: transform 0.5s;
+        }
+
+        .gallery::-webkit-scrollbar{
+            display: none;
+        }
+        
+        #backBtn{
+            width: 50px;
+            margin: 40px;
+            cursor: pointer;
+        }
+        #nextBtn{
+            width: 50px;
+            margin: 40px;
+            cursor: pointer;
+        }
+       
+        .gallery-wrap{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10% auto;
+        }
+        .gallery div img:hover{
+            filter : grayscale(0);
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="gallery-wrap">
+        <img src="logo/back-btn.png" alt="" id="backBtn">
+        <div class="gallery">
+            <div>
+                <span><img src="image/img1.webp" alt=""></span>
+                <span><img src="image/img2.webp" alt=""></span>
+                <span><img src="image/img3.jpeg" alt=""></span>
+            
+            </div>
+            <div>
+                <span><img src="image/img1.webp" alt=""></span>
+                <span><img src="image/img2.webp" alt=""></span>
+                <span><img src="image/img3.jpeg" alt=""></span>
+            </div>
+        </div>
+        <img src="logo/next-btn.png" alt="" id="nextBtn">
+    </div>
+    <script>
+        let scrollContainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+
+        // It is mouse wheel to scroll left-right
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+            scrollContainer.style.scrollBehavior = "auto";
+        })
+
+        // back btn click
+        backBtn.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft +=900;
+        })
+
+        // next btn-click
+        nextBtn.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior = "smooth"
+            scrollContainer.scrollLeft -=900;
+        })
+    </script>
+    
+</body>
+</html>

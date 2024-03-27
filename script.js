@@ -1,18 +1,42 @@
-window.onscroll = function () {
-  scrollFunction();
-};
+// JavaScript for scrolling text and image
+function scrollText() {
+  var container = document.getElementById("scrollingTextContainer");
+  var text = container.innerText;
+  var wrapper = document.createElement("div");
+  wrapper.style.whiteSpace = "nowrap";
+  wrapper.innerText = text;
+  container.innerHTML = "";
+  container.appendChild(wrapper);
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("scrollToTopButton").style.display = "block";
-  } else {
-    document.getElementById("scrollToTopButton").style.display = "none";
-  }
+  // Calculate the width of the text
+  var textWidth = wrapper.offsetWidth;
+
+  // Set image width according to text width
+  var image = document.getElementById("scrollingImage");
+  image.style.width = textWidth + "px"; // Set image width
+
+  // Start scrolling
+  var position = 0;
+  setInterval(function () {
+    position--;
+    if (position < -textWidth) {
+      position = container.offsetWidth;
+    }
+    wrapper.style.transform = "translateX(" + position + "px)";
+    image.style.transform = "translateX(" + position + "px)"; // Move image along with text
+  }, 15); // Adjust speed here
 }
 
-document
-  .getElementById("scrollToTopButton")
-  .addEventListener("click", function () {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  });
+
+// Section-1 Start scrolling when the page is loaded
+window.onload = scrollText;
+// This is for first -image sliding
+window.addEventListener("load", function () {
+  // Get carousel instance
+  var carousel = new bootstrap.Carousel(
+    document.getElementById("carouselExampleIndicators")
+  );
+  // Start sliding to the next image
+  carousel.next();
+});
+
