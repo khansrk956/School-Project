@@ -23,10 +23,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <!-- icon-Ajax -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.0.1/css/ionicons.min.css">
   </head>
   <body>
     <!-- Header Section -->
-    <header>
+    <header class="section-hero">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
@@ -277,17 +279,112 @@
             </button>
           </div>
       </section>
-      
-    
-    
       <!-- image slider-end -->
-
       <!-- End section-3 -->
+
+      <!-- section-4 card-paragraph -->
+      <section>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-12"><h2>Our Facilites</h2></div>
+            <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 120px; background-color: black; height: 3px;"
+          />
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 d-flex">
+              <div class="card border-primary mb-3 me-2" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body text-primary">
+                  <h5 class="card-title">Primary card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body text-primary">
+                  <h5 class="card-title">Primary card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6">
+              
+                <ul style="text-align: center; list-style: none; border: 2px solid black; background-color: rgb(251, 243, 228);">
+                  <li><h2>Hiba Public School</h2></li>
+                    
+                  <li><a href="tel:+8802727273" style="text-decoration: none; color: black;"><i class="fa-solid fa-phone"></i> +88 0272 7273</a></li>
+                  <li><a href="mailto:khansrk956@gmail.com" style="text-decoration: none; color: black;"><i class="fa-solid fa-envelope"></i> khansrk956@gmail.com</a></li>
+                  <li><span><i class="fa-solid fa-building"></i> Sector-22 , Faridabad, Haryana 121005</span></li>
+                </ul>
+  
+            </div>
+              
+              
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <!-- end section-4 -->
+
+      <!-- section-5 special momvement -->
+      <section class="bg-success bg-opacity-10">
+        <div class="container">
+          <div class="container py-5 text-center">
+            <div class="row">
+              <div class="col-12"><h2>Special Moments</h2></div>
+              <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 120px; background-color: black; height: 3px;"
+            />
+          <div class="row">
+            <div class="col d-flex" id="imageContainer">
+              <marquee behavior="" direction="">
+                <img src="image-1/football.jpeg" alt="1">
+                <img src="image-1/img1.jpeg" alt="2" >
+                <img src="image-1/img2.webp" alt="3" >
+                <img src="image-1/img3.jpeg" alt="54" >
+                <img src="image-1/img2.webp" alt="6" >
+                <img src="image/img5.webp" alt="7" >
+                <img src="image/img3.jpeg" alt="8" >
+                <img src="image/img2.webp" alt="9" >
+              </marquee>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section-6 image galary -->
+      <section class="bg-success bg-opacity-10">
+        <div class="container">
+          <div class="container py-5 text-center">
+            <div class="row">
+              <div class="col-12"><h2>Image Gallery</h2></div>
+              <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 120px; background-color: black; height: 3px;"
+            />
+          <div class="row" id="galary-img">
+              <div class="col-lg-3"><a href="#"><img src="s5-img/img-6.avif" alt="working" class="img-thumbnail"></a></div>
+              <div class="col-lg-3"><a href="#"><img src="s5-img/img-5.avif" alt="working" class="img-thumbnail"></a></div>
+              <div class="col-lg-3"><a href="#"><img src="s5-img/img-3.avif" alt="working" class="img-thumbnail"></a></div>
+              <div class="col-lg-3"><a href="#"><img src="s5-img/img-2.avif" alt="working" class="img-thumbnail"></a></div>
+          </div>
+        </div>
+      </section>
+      
+
     </main>
 
     <!-- Footer -->
     <footer
-      class="text-center text-lg-start text-white"
+      class="text-center text-lg-start text-white section-footer"
       style="background-color: #1c2331"
     >
       <!-- Section: Social media -->
@@ -335,7 +432,7 @@
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <!-- Content -->
               <h6 class="text-uppercase fw-bold">
-                <img class="img-fluid mb-4" src="logo/logo2.png" alt="" />
+                <img class="img-thumbnail mb-4" src="logo/logo2.png" alt="" />
               </h6>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.

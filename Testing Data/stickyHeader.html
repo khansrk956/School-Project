@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Header</title>
+    <style>
+        .sticky{
+            position: fixed;
+            top:0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        window.addEventListener('scroll', function(){
+            let navbar = document.getElementById('menu-bar');
+            if(window.pageYOffset >= 411){
+                navbar.classList.add('sticky');
+            }else{
+                navbar.classList.remove('sticky');
+            }
+        })
+    </script>
+</body>
+</html>

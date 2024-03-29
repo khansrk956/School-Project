@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll To Top Button</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    #scrollToTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Your content here -->
+    <div style="height: 2000px;">Scroll down...</div>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <div id="scrollToTopBtn">
+    <iframe srcdoc="<html><head><style>button {display: block; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 50%; cursor: pointer;}</style></head><body><button onclick='parent.scrollToTop()' title='Go to top'>Top</button></body></html>" width="50" height="50" scrolling="no" frameborder="0"></iframe>
+  </div>
+
+  <!-- Bootstrap JS and Custom JS -->
+  <script>
+    window.scrollToTop = function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    window.addEventListener('scroll', function() {
+      var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+      if (window.scrollY > 100) {
+        scrollToTopBtn.style.display = 'block';
+      } else {
+        scrollToTopBtn.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

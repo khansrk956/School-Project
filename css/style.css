@@ -5,8 +5,9 @@
 }
 
 body {
-  background-color: #3eecac;
-  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+  background-color: whitesmoke;
+  /* background-color: #3eecac;
+  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%); */
 }
 
 .navbar .navbar-brand img {
@@ -49,55 +50,4 @@ body {
   padding: 0;
 }
 
-/* section-3 image slide without bootstrap */
-
-body {
-  background-color: azure;
-}
-.gallery {
-  width: 900px;
-  display: flex;
-  overflow-x: scroll;
-  /* background-color: yellow; */
-}
-.gallery div {
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 20px;
-  padding: 10px;
-  flex: none;
-  /* background-color: aqua; */
-}
-.gallery div img {
-  width: 100%;
-  filter: grayscale(100%);
-  transition: transform 0.5s;
-}
-
-.gallery::-webkit-scrollbar {
-  display: none;
-}
-
-#backBtn {
-  width: 50px;
-  margin: 40px;
-  cursor: pointer;
-}
-#nextBtn {
-  width: 50px;
-  margin: 40px;
-  cursor: pointer;
-}
-
-.gallery-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10% auto;
-}
-.gallery div img:hover {
-  filter: grayscale(0);
-  cursor: pointer;
-  transform: scale(1.1);
-}
+/* section-4*/

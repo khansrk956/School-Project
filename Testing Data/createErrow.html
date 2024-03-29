@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .scrollTop-style{
+        position: fixed;
+        right:2%;
+        bottom: 5%;
+        z-index:1;
+    }
+    .scroll-top{
+        width: 4rem;
+        height: 4rem;
+        background: steelblue;
+        display: inline-block;
+        padding: 1.4rem 1.8rem;
+        position: relative;
+        color: white;
+        animation: water-wase 3s linear infinite;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <!-- <section class="section-hero"> -->
+
+    </section>
+    <script>
+        const heroSection = document.querySelector(".section-hero")
+        const footerElement = document.querySelector(".section-footer");
+        const scrollElement = document.createElement("div");
+        scrollElement.classList.add("scrollTop-style");
+
+        scrollElement.innerHTML = `<ion-icon name="arrow-up-outline" class="scroll-top"></ion-icon>`;
+
+        footerElement.after(scrollElement);
+
+        const scrollTop = () =>{
+            heroSection.scrollIntoView({behavior:"smooth"});
+        }
+        scrollElement.addEventListener('click',scrollTop);
+
+
+    </script>
+</body>
+</html>

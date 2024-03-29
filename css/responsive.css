@@ -16,13 +16,88 @@
   height: auto; /* Ensure image height adjusts according to width */
 }
 
-
 /* section-3 div-height and img -height-width */
-.sc-item{
+.sc-item {
   height: 600px;
 }
-.sc-img{
+.sc-img {
   height: 100%;
   /* object-fit: cover; */
 }
 
+/* scroll-top-up */
+.scrollTop-style {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  z-index: 1;
+}
+.scroll-top {
+  width: 4rem;
+  height: 4rem;
+  background: darkorange;
+  display: inline-block;
+  padding: 1.4rem 1.7rem;
+  position: relative;
+  color: white;
+  /* animation: water-wase 3s linear infinite; */
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+
+/* sticky navbar css */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+/* Your existing CSS styles here */
+  /* .navbar {
+    transition: height 0.3s ease;   } */
+
+/* section-special moments */
+/*
+#imageContainer {
+  display: flex;
+  overflow: hidden;
+}
+
+#imageContainer img {
+  animation: moveImages 10s linear infinite; 
+  padding-left: 10px;
+}
+
+@keyframes moveImages {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+} */
+
+/* Define styles for the container and images */
+
+#imageContainer img{
+  height: 300px;
+}
+
+
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 576px) {
+  .carousel-inner{
+    height: 350px;
+  }
+}
+
+
+/* section-6 */
+#galary-img a img{
+  height: 100%;
+  
+}

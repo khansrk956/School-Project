@@ -27,7 +27,6 @@ function scrollText() {
   }, 15); // Adjust speed here
 }
 
-
 // Section-1 Start scrolling when the page is loaded
 window.onload = scrollText;
 // This is for first -image sliding
@@ -38,5 +37,56 @@ window.addEventListener("load", function () {
   );
   // Start sliding to the next image
   carousel.next();
+});
+
+// scrollTop -arrow
+// const heroSection = document.querySelector(".section-hero");
+// const footerElement = document.querySelector(".section-footer");
+// const scrollElement = document.createElement("div");
+// scrollElement.classList.add("scrollTop-style");
+
+// scrollElement.innerHTML = `<span class="scroll-top"><i class="fa-solid fa-arrow-up"></i></span>`;
+
+// footerElement.after(scrollElement);
+
+// const scrollTop = () => {
+//   heroSection.scrollIntoView({ behavior: "smooth" });
+// };
+// scrollElement.addEventListener("click", scrollTop);
+const heroSection = document.querySelector(".section-hero");
+const footerElement = document.querySelector(".section-footer");
+const scrollElement = document.createElement("div");
+scrollElement.classList.add("scrollTop-style");
+scrollElement.innerHTML = `<span class="scroll-top"><i class="fa-solid fa-arrow-up"></i></span>`;
+footerElement.after(scrollElement);
+
+const scrollTop = () => {
+  heroSection.scrollIntoView({ behavior: "smooth" });
+};
+
+scrollElement.addEventListener("click", scrollTop);
+
+// Function to toggle visibility of scroll-up arrow
+const toggleScrollTop = () => {
+  if (window.scrollY < 30) {
+    scrollElement.style.display = "none";
+  } else {
+    scrollElement.style.display = "block";
+  }
+};
+
+// Add event listener for scroll event
+window.addEventListener("scroll", toggleScrollTop);
+
+// sticky navbar code
+window.addEventListener("scroll", function () {
+  var navbar = document.querySelector(".navbar");
+  var sticky = navbar.offsetTop;
+
+  if (window.pageYOffset > sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
 });
 
