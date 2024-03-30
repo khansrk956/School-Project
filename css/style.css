@@ -50,4 +50,44 @@ body {
   padding: 0;
 }
 
-/* section-4*/
+/* section-5 special - moments*/
+
+#sc-5-con{
+  /* background-color: blue; */
+  height: 270px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.slide-container{
+  display: flex;
+  width: calc(325px * 18);
+  animation: scroll 40s linear 0s infinite;
+}
+@keyframes scroll {
+  0%{
+      transform: translateX(0);
+  }
+  100%{
+      transform: translateX(calc(-325px * 9));
+  }
+}
+.slide-image{
+  /* height: 350; */
+  /* width: 350px; */
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+#img-sc5{
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+}
+#img-sc5:hover{
+  transform:translateZ(11px);
+}

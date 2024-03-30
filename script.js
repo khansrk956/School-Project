@@ -27,6 +27,7 @@ function scrollText() {
   }, 15); // Adjust speed here
 }
 
+
 // Section-1 Start scrolling when the page is loaded
 window.onload = scrollText;
 // This is for first -image sliding
