@@ -103,4 +103,47 @@
 }
 
 
-/* card-section-popup */
+/* Student Login-Form css */
+.background {
+  background-image: url('../image/leaf-img.jpg!d'); /* Change the URL to your desired background image */
+  background-size: cover;
+  /* backdrop-filter: blur(5px); */
+  height: 100vh;
+}
+
+#stu-card {
+  background-color: black; /* Adjust the opacity as needed */
+  opacity: 0.8;
+  
+}
+
+#stu-title {
+  color:white; /* Change the color of the title */
+}
+
+
+/* Staff Login-form css */
+#staffLogin {
+  background-image: url('../image/leaf2.jpg!s1'); /* Change the URL to your desired background image */
+  background-size: cover;
+  /* backdrop-filter: blur(5px); */
+  height: 100vh;
+ 
+}
+
+#stu-card {
+  background-color: black; /* Adjust the opacity as needed */
+  opacity: 0.8;
+}
+
+#stu-title {
+  color:white; /* Change the color of the title */
+}
+
+
+/* Optional: Styling for the address */
+.address {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+}
