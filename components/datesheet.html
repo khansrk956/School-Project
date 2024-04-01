@@ -73,7 +73,11 @@
                   >ABOUT US</a
                 >
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="our-school.html">OUR SCHOOL</a></li>
+                  <li>
+                    <a class="dropdown-item" href="our-school.html"
+                      >OUR SCHOOL</a
+                    >
+                  </li>
                   <li><a class="dropdown-item" href="schoolRules.html">SCHOOL RULES</a></li>
                   <li><a class="dropdown-item" href="vision.html">VISION</a></li>
                 </ul>
@@ -89,7 +93,7 @@
                   >ADMISSION</a
                 >
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="/components/admissionForm.html">ADMISSION FORM</a></li>
+                  <li><a class="dropdown-item" href="./admissionForm.html">ADMISSION FORM</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -130,7 +134,9 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="../components/contact.html"> CONTACT </a>
+                <a class="nav-link active" href="../components/contact.html">
+                  CONTACT
+                </a>
               </li>
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -155,60 +161,24 @@
         </div>
       </nav>
     </header>
+    <!-- end header section -->
 
-    <!-- Header Section-End -->
+    <!-- start main section -->
     <main>
-      <!-- Login-form Section -->
-      <div class="container-fluid background">
-        <div class="row justify-content-center align-items-center h-100">
-          <div class="col-md-4">
-            <div class="card shadow p-3 mb-5 rounded" id="stu-card">
-              <div class="card-body">
-                <h5 class="card-title text-center mb-4" id="stu-title">Student Login</h5>
-                <form id="loginForm">
-                  <div class="mb-3">
-                    <label for="username" class="form-label text-white"
-                      >Username</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="username"
-                      placeholder="Enter your username"
-                      class="text-dark"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="password" class="form-label text-white"
-                      >Password</label
-                    >
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="password"
-                      placeholder="Enter your password"
-                    />
-                  </div>
-                  <button type="submit" class="btn btn-outline-success w-100">
-                    Login
-                  </button>
-                </form>
-                <div
-                  id="loginMessage"
-                  class="mt-3 text-center"
-                  style="display: none"
-                >
-                  <p class="text-success">Login successful!</p>
-                  <button id="returnHomeBtn" class="btn btn-outline-success">
-                    Return to Home Page
-                  </button>
+        <section style="background-color: green;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-align my-5"> 
+                        <h1 style="color:white; font:bolder;">Date Sheet</h1>
+                        <p style="color:gold; font-weight: 600;">Hiba Public School Faridabad- <small class="text-light">Date-sheet</small></p>
+                       
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
+        </section>
+
     </main>
+    <!-- End main section -->
 
     <!-- Footer -->
     <footer
@@ -360,29 +330,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="../script.js"></script>
-    <script>
-      document
-        .getElementById("loginForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault(); // Prevent form submission
-          var username = document.getElementById("username").value;
-          var password = document.getElementById("password").value;
-
-          // Here, you would perform your authentication logic.
-          // For demonstration purposes, let's assume the login is successful.
-          var loginSuccessful = true;
-
-          if (loginSuccessful) {
-            document.getElementById("loginMessage").style.display = "block";
-          }
-        });
-
-      document
-        .getElementById("returnHomeBtn")
-        .addEventListener("click", function () {
-          // Redirect to home page. You need to replace 'home.html' with your actual home page URL.
-          window.location.href = "/";
-        });
-    </script>
   </body>
 </html>
