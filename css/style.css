@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color:white;
   /* background-color: #3eecac;
   background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%); */
 }
@@ -127,6 +127,7 @@ body {
 }
 
 /* only for pop-card */
+
 *,
 *:before,
 *:after {
@@ -152,24 +153,33 @@ body {
   gap: 10px;
   padding: 15px;
   /* margin: 40px; */
-  background-color: rgba(250, 240, 230, 0.396);
+  background-color:lightsteelblue;
 }
-.card {
+#card-pop {
   background-color: white;
   border-radius: 8px;
   width: 350px; /* Fixed width for cards */
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow for better visibility */
 }
+#card-pop img{
+  width: 300px; height: 250px; margin-bottom: 5px;
+}
 .popup button {
   display: block;
   margin: 0 auto 20px; /* Centered button */
   background-color: transparent;
-  font-size: 30px;
+  font-size: 50px;
   color: rgb(234, 55, 55);
   border: none;
   outline: none;
   cursor: pointer;
+}
+.popup button:hover{
+  background-color: springgreen;
+  border: none;
+  border-radius:5px;
+ 
 }
 /* .popup p{
             font-size: 14px;
@@ -178,8 +188,34 @@ body {
         } */
 
 @media (max-width: 768px) {
-  .cards {
-    flex-direction: column; /* Switch to vertical layout on smaller screens */
+  #main-card {
+    flex-direction: row; /* Switch to vertical layout on smaller screens */
     align-items: center;
   }
+  #card-pop{
+    width: 115px;
+    height: 150px;
+  }
+  #card-pop img{
+    width: 100%;
+    height: 100%;
+  }
+  #main-card{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    padding: 3px;
+    /* margin: 40px; */
+    background-color:lightsteelblue;
+  }
+  #card-pop h4{
+    font-size: 12px;
+  }
+  #card-pop h6{
+    font-size: 12px;
+  }
 }
+
+
+
