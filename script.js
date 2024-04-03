@@ -27,7 +27,6 @@ function scrollText() {
   }, 15); // Adjust speed here
 }
 
-
 // Section-1 Start scrolling when the page is loaded
 window.onload = scrollText;
 // This is for first -image sliding
@@ -91,16 +90,68 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
 // card-pop-up javascript
 window.addEventListener("load", function () {
-  setTimeout(
-      function open(event) {
-          document.querySelector(".popup").style.display = "block"
-      }, 1000)
-})
+  setTimeout(function open(event) {
+    document.querySelector(".popup").style.display = "block";
+  }, 1000);
+});
 document.querySelector("#close").addEventListener("click", function () {
   document.querySelector(".popup").style.display = "none";
 });
 
+// Section-Datesheet.html
+// Dummy data for the exam date sheet
+var examSchedule = [
+  {
+    date: "2024-04-10",
+    subject: "Mathematics",
+    time: "9:00 AM",
+    duration: "2 hours",
+  },
+  {
+    date: "2024-04-12",
+    subject: "English",
+    time: "10:00 AM",
+    duration: "1.5 hours",
+  },
+  {
+    date: "2024-04-15",
+    subject: "Science",
+    time: "11:30 AM",
+    duration: "2.5 hours",
+  },
+  // Add more exam schedules here if needed
+];
 
+// Function to populate the exam date sheet
+// function populateExamDateSheet() {
+//   var tableBody = document.getElementById("examTableBody");
+//   tableBody.innerHTML = "";
+//   examSchedule.forEach(function (exam) {
+//     var row =
+//       "<tr>" +
+//       "<td>" +
+//       exam.date +
+//       "</td>" +
+//       "<td>" +
+//       exam.subject +
+//       "</td>" +
+//       "<td>" +
+//       exam.time +
+//       "</td>" +
+//       "<td>" +
+//       exam.duration +
+//       "</td>" +
+//       "</tr>";
+//     tableBody.innerHTML += row;
+//   });
+// }
+
+// Call the function to populate exam date sheet on page load
+// populateExamDateSheet();
+// Call the function to populate exam date sheet on page load
+// window.onload = populateExamDateSheet;
+// Call the function to populate exam date sheet on page load
+// window.onload = function() {
+//   populateExamDateSheet()};

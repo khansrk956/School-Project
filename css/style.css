@@ -167,19 +167,19 @@ body {
 }
 .popup button {
   display: block;
-  margin: 0 auto 20px; /* Centered button */
+  /* Centered button */
+  /* margin: 10px auto 10px;  */
   background-color: transparent;
-  font-size: 50px;
+  font-size: 35px;
   color: rgb(234, 55, 55);
   border: none;
-  outline: none;
+  outline:none;
   cursor: pointer;
 }
 .popup button:hover{
   background-color: springgreen;
-  border: none;
+  border: 2px solid yello;
   border-radius:5px;
- 
 }
 /* .popup p{
             font-size: 14px;

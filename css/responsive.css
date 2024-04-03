@@ -54,39 +54,10 @@
   z-index: 1000;
 }
 
-
-/* Your existing CSS styles here */
-  /* .navbar {
-    transition: height 0.3s ease;   } */
-
-/* section-special moments */
-/*
-#imageContainer {
-  display: flex;
-  overflow: hidden;
-}
-
-#imageContainer img {
-  animation: moveImages 10s linear infinite; 
-  padding-left: 10px;
-}
-
-@keyframes moveImages {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-} */
-
 /* Define styles for the container and images */
-
 #imageContainer img{
   height: 300px;
 }
-
-
 
 /* Media query for screens smaller than 600px */
 @media (max-width: 576px) {
@@ -95,13 +66,10 @@
   }
 }
 
-
 /* section-6 */
 #galary-img a img{
   height: 100%;
-  
 }
-
 
 /* Student Login-Form css */
 .background {
@@ -121,14 +89,12 @@
   color:white; /* Change the color of the title */
 }
 
-
 /* Staff Login-form css */
 #staffLogin {
   background-image: url('../image/leaf2.jpg!s1'); /* Change the URL to your desired background image */
   background-size: cover;
   /* backdrop-filter: blur(5px); */
   height: 100vh;
- 
 }
 
 #stu-card {
@@ -147,3 +113,30 @@
   font-size: 16px;
   margin-top: 10px;
 }
+
+/* datesheet.html -rules css */
+#rule-datesheet{
+  max-width:90%;
+  /* max-height: 80%; */
+  background-color:lightsteelblue;
+  padding-top: 30px;
+  padding-bottom: 1px;
+}
+.rule{
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* School Awards */
+
+#start-container {
+  padding: 20px;
+}
+.award-image {
+  max-width: 100%;
+  height: auto;
+}
+  
