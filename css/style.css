@@ -171,7 +171,8 @@ body {
   /* margin: 10px auto 10px;  */
   background-color: transparent;
   font-size: 35px;
-  color: rgb(234, 55, 55);
+  /* color: rgb(234, 55, 55); */
+  color: white;
   border: none;
   outline:none;
   cursor: pointer;

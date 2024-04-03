@@ -34,21 +34,25 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.0.1/css/ionicons.min.css"
     />
     <style>
-      /* Add custom styles here */
-      #sports {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        /* max-width: 90%; */
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
       }
-      #con-sports {
-        margin-top: 30px;
-      }
-      .card {
+
+      h1 {
         text-align: center;
-        margin-bottom: 20px;
       }
-      .card-title{
-        background-color:orange;
+
+      .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+      }
+
+      .image-gallery img {
+        width: 100%;
+        height: auto;
       }
     </style>
   </head>
@@ -209,151 +213,12 @@
 
     <!-- start main section -->
     <main>
-      <section style="background-color: green">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-align my-5">
-              <h1 style="color: white; font: bolder">School Sports</h1>
-              <p style="color: gold; font-weight: 600">
-                Hiba Public School Faridabad-
-                <small class="text-light">Sports</small>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- section-2 sports -->
-      <section id="sports"> 
-        <div class="container" id="con-sports">
-          <h1 class="text-center">Hiba Public School Sports Data</h1>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Football</h5>
-                  <p class="card-text">
-                    Football is a popular sport played at Hiba Public School.
-                    The school has both boys' and girls' teams competing in
-                    local tournaments.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Basketball</h5>
-                  <p class="card-text">
-                    Basketball is another popular sport at Hiba Public School.
-                    The school has a well-equipped basketball court and teams
-                    participating in inter-school competitions.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Cricket</h5>
-                  <p class="card-text">
-                    Cricket is loved by many students at Hiba Public School. The
-                    school organizes cricket matches regularly and encourages
-                    students to participate.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Chess</h5>
-                  <p class="card-text">
-                    Chess is a popular indoor sport at Hiba Public School. The
-                    school has a chess club where students practice and compete
-                    in tournaments.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Skipping</h5>
-                  <p class="card-text">
-                    Skipping is a fun indoor activity enjoyed by students at
-                    Hiba Public School. The school organizes skipping
-                    competitions and promotes it as a form of exercise.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Musical Chairs</h5>
-                  <p class="card-text">
-                    Musical Chairs is a classic party game loved by students at
-                    Hiba Public School. It's often played during school events
-                    and celebrations.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Arts and Crafts</h5>
-                  <p class="card-text">
-                    Arts and Crafts activities are encouraged at Hiba Public
-                    School to foster creativity among students. Students
-                    participate in various art projects and exhibitions.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Balloon Volleyball</h5>
-                  <p class="card-text">
-                    Balloon Volleyball is a fun and safe indoor game enjoyed by
-                    students at Hiba Public School. It's played using balloons
-                    instead of a traditional volleyball.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Puzzles</h5>
-                  <p class="card-text">
-                    Puzzles are a great way to stimulate the mind and
-                    problem-solving skills. Hiba Public School has a collection
-                    of puzzles for students to enjoy during free time.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Board Games</h5>
-                  <p class="card-text">
-                    Board Games are a popular indoor activity at Hiba Public
-                    School. Students gather to play various board games during
-                    leisure time and school events.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div class="container">
+        <h1>Image Gallery</h1>
+        <div id="imageGallery" class="image-gallery"></div>
+      </div>
+      <!-- Image Section -->
     </main>
-    <!-- End main section -->
-
     <!-- Footer -->
     <footer
       class="text-center text-lg-start text-white section-footer"
@@ -497,12 +362,31 @@
       <!-- Copyright -->
     </footer>
     <!-- Footer-End -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetchImages();
+      });
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../script.js"></script>
+      function fetchImages() {
+        fetch("https://www.istockphoto.com/search/search-by-asset?assetid=1496377580&assettype=image")
+          .then((response) => response.json())
+          .then((data) => {
+            displayImages(data);
+          })
+          .catch((error) => {
+            console.error("Error fetching images:", error);
+          });
+      }
+
+      function displayImages(images) {
+        const imageGallery = document.getElementById("imageGallery");
+
+        images.forEach((imageUrl) => {
+          const img = document.createElement("img");
+          img.src = imageUrl;
+          imageGallery.appendChild(img);
+        });
+      }
+    </script>
   </body>
 </html>

@@ -33,6 +33,32 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.0.1/css/ionicons.min.css"
     />
+    <style>
+      /* Custom styles here */
+      body {
+        background-color: #f8f9fa;
+      }
+      .container {
+        margin-top: 50px;
+      }
+      .news-item {
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      }
+      .news-item h2 {
+        color: #007bff;
+      }
+      .news-item p {
+        color: #495057;
+      }
+      .news-item .date {
+        font-size: 0.9em;
+        color: #6c757d;
+      }
+    </style>
   </head>
   <body>
     <!-- Header Section -->
@@ -78,8 +104,14 @@
                       >OUR SCHOOL</a
                     >
                   </li>
-                  <li><a class="dropdown-item" href="schoolRules.html">SCHOOL RULES</a></li>
-                  <li><a class="dropdown-item" href="vision.html">VISION</a></li>
+                  <li>
+                    <a class="dropdown-item" href="schoolRules.html"
+                      >SCHOOL RULES</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="vision.html">VISION</a>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -93,7 +125,11 @@
                   >ADMISSION</a
                 >
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./admissionForm.html">ADMISSION FORM</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./admissionForm.html"
+                      >ADMISSION FORM</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -108,11 +144,19 @@
                 >
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item" href="academic.html">ACADEMICS UPDATE</a>
+                    <a class="dropdown-item" href="academic.html"
+                      >ACADEMICS UPDATE</a
+                    >
                   </li>
-                  <li><a class="dropdown-item" href="datesheet.html">DATE SHEET</a></li>
                   <li>
-                    <a class="dropdown-item" href="awards.html">CRITERIA FOR AWARDS</a>
+                    <a class="dropdown-item" href="datesheet.html"
+                      >DATE SHEET</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="awards.html"
+                      >CRITERIA FOR AWARDS</a
+                    >
                   </li>
                 </ul>
               </li>
@@ -128,9 +172,17 @@
                   HALL OF FAME
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./newsUpdates.html">NEWS & UPDATES</a></li>
-                  <li><a class="dropdown-item" href="events.html">EVENTS</a></li>
-                  <li><a class="dropdown-item" href="sports.html">SPORTS</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./newsUpdates.html"
+                      >NEWS & UPDATES</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="events.html">EVENTS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="sports.html">SPORTS</a>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -165,18 +217,99 @@
 
     <!-- start main section -->
     <main>
-        <section style="background-color: green;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-align my-5"> 
-                        <h1 style="color:white; font:bolder;">News & Updates</h1>
-                        <p style="color:gold; font-weight: 600;">Hiba Public School Faridabad- <small class="text-light">News</small></p>
-                       
-                    </div>
-                </div>
+      <section style="background-color: green">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-align my-5">
+              <h1 style="color: white; font: bolder">News & Updates</h1>
+              <p style="color: gold; font-weight: 600">
+                Hiba Public School Faridabad-
+                <small class="text-light">News</small>
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
+      <!-- section-2 news and update -->
+      <div class="container">
+        <h1 class="text-center mb-5 bg-success bg-opacity-10">Hiba Public School - News & Updates</h1>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="news-item">
+              <h2>First Day of School</h2>
+              <p>
+                Welcome back to all our students and staff for the start of the
+                new school year! We're excited to begin another year of learning
+                and growth together.
+              </p>
+              <p class="date">Posted on: April 1, 2024</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="news-item">
+              <h2>School Carnival</h2>
+              <p>
+                Get ready for our annual school carnival! Join us for a day of
+                fun activities, games, and delicious food. Don't miss out!
+              </p>
+              <p class="date">Posted on: March 25, 2024</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="news-item">
+              <h2>Parent-Teacher Conference</h2>
+              <p>
+                Reminder: Parent-teacher conferences will be held next week.
+                Please schedule your appointments with your child's teachers to
+                discuss their progress.
+              </p>
+              <p class="date">Posted on: March 10, 2024</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="news-item">
+              <h2>School Sports Day</h2>
+              <p>
+                Our annual sports day is coming up! Get ready to cheer on your
+                classmates and participate in various sports events. Let's make
+                it a memorable day!
+              </p>
+              <p class="date">Posted on: February 20, 2024</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="news-item">
+              <h2>Science Fair Competition</h2>
+              <p>
+                We're excited to announce our annual science fair competition!
+                Showcase your innovative projects and experiments. Registration
+                opens next week!
+              </p>
+              <p class="date">Posted on: February 5, 2024</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="news-item">
+              <h2>Community Clean-up Day</h2>
+              <p>
+                Join us for a community clean-up day this weekend! Let's work
+                together to keep our school and neighborhood clean and green.
+              </p>
+              <p class="date">Posted on: January 15, 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- section-2 end -->
     </main>
     <!-- End main section -->
 
