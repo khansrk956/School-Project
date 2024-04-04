@@ -10,7 +10,7 @@ body{
 
 .img-gallery{
     width: 80%;
-    margin: 100px auto 50px;
+    margin: 50px auto 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
@@ -19,10 +19,11 @@ body{
 .img-gallery img{
     width: 100%;
     cursor: pointer;
+    transition: transform .8s;
 }
 
 .img-gallery img:hover{
-    transform: scale(0.8) rotate(-15deg);
+    transform: scale(1.1);
     border-radius: 20px;
     box-shadow: 0 32px 75px rgba(68,77,136,0.2);
 }
@@ -42,7 +43,8 @@ body{
 }
 
 .full-img img{
-    max-width: 500px;
+    max-width: 700px;
+    border: 1px solid white;
 }
 
 .full-img span{
@@ -52,4 +54,11 @@ body{
     font-size: 30px;
     color: white;
     cursor: pointer;
+}
+
+@media (max-width: 576px){
+    .full-img img{
+        max-width: 350px;
+        border: 1px solid green;
+    }
 }

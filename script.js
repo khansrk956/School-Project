@@ -27,6 +27,7 @@ function scrollText() {
   }, 15); // Adjust speed here
 }
 
+
 // Section-1 Start scrolling when the page is loaded
 window.onload = scrollText;
 // This is for first -image sliding
@@ -40,19 +41,6 @@ window.addEventListener("load", function () {
 });
 
 // scrollTop -arrow
-// const heroSection = document.querySelector(".section-hero");
-// const footerElement = document.querySelector(".section-footer");
-// const scrollElement = document.createElement("div");
-// scrollElement.classList.add("scrollTop-style");
-
-// scrollElement.innerHTML = `<span class="scroll-top"><i class="fa-solid fa-arrow-up"></i></span>`;
-
-// footerElement.after(scrollElement);
-
-// const scrollTop = () => {
-//   heroSection.scrollIntoView({ behavior: "smooth" });
-// };
-// scrollElement.addEventListener("click", scrollTop);
 const heroSection = document.querySelector(".section-hero");
 const footerElement = document.querySelector(".section-footer");
 const scrollElement = document.createElement("div");
@@ -124,34 +112,5 @@ var examSchedule = [
   // Add more exam schedules here if needed
 ];
 
-// Function to populate the exam date sheet
-// function populateExamDateSheet() {
-//   var tableBody = document.getElementById("examTableBody");
-//   tableBody.innerHTML = "";
-//   examSchedule.forEach(function (exam) {
-//     var row =
-//       "<tr>" +
-//       "<td>" +
-//       exam.date +
-//       "</td>" +
-//       "<td>" +
-//       exam.subject +
-//       "</td>" +
-//       "<td>" +
-//       exam.time +
-//       "</td>" +
-//       "<td>" +
-//       exam.duration +
-//       "</td>" +
-//       "</tr>";
-//     tableBody.innerHTML += row;
-//   });
-// }
 
-// Call the function to populate exam date sheet on page load
-// populateExamDateSheet();
-// Call the function to populate exam date sheet on page load
-// window.onload = populateExamDateSheet;
-// Call the function to populate exam date sheet on page load
-// window.onload = function() {
-//   populateExamDateSheet()};
+

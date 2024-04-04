@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dance photos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section style="background-color: green; text-align: center; padding: 20px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <h1 style="color: white; font: bolder">Annual Functions Gallery</h1>
+              <p style="color: gold; font-weight: 600">
+                Hiba Public School Faridabad-
+                <small class="text-light">Academic</small>
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image-Gallery -->
+    <div class="full-img" id="fullImgBox">
+      <img src="images-annual/img1.jpeg" alt="" id="fullImg">
+      <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+      <img src="images-annual/img1.jpeg" alt="" onclick="openFullImg(this.src)">
+      <img src="images-annual/img2.jpeg" alt="" onclick="openFullImg(this.src)">
+      <img src="images-annual/img3.jpeg" alt="" onclick="openFullImg(this.src)">
+      <img src="images-annual/img4.jpeg" alt="" onclick="openFullImg(this.src)">
+      <img src="images-annual/img5.jpeg" alt="" onclick="openFullImg(this.src)">
+      <img src="images-annual/img6.jpeg" alt="" onclick="openFullImg(this.src)">
+      <img src="images-annual/img7.jpeg" alt="" onclick="openFullImg(this.src)">
+      <img src="images-annual/img8.jpeg" alt="" onclick="openFullImg(this.src)">
+      <img src="images-annual/img9.jpeg" alt="" onclick="openFullImg(this.src)">
+      <img src="images-annual/img10.jpeg" alt="" onclick="openFullImg(this.src)">
+      <img src="images-annual/img11.jpeg" alt="" onclick="openFullImg(this.src)">
+      <img src="images-annual/img12.jpeg" alt="" onclick="openFullImg(this.src)">
+    </div>
+
+  </main>
+  <script>
+    const fullImgBox = document.getElementById("fullImgBox");
+    const fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+      fullImgBox.style.display = "flex";
+      fullImg.src = pic;
+    }
+
+    function closeFullImg(){
+      fullImgBox.style.display = "none";
+    }
+  </script>
+</body>
+</html>
